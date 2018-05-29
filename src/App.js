@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ToDo from './components/ToDo';
+import ToDoApp from './components/ToDoApp';
 
 class App extends Component {
   render() {
-    return <ToDo />;
+    return <ToDoApp />;
   }
 }
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class Form extends Component {
 
   state = {
@@ -23,7 +22,17 @@ class Form extends Component {
 
   onKeyPress = e => {
     if(e.key === 'Enter'){
-      this.props.addItem(this.state.input);
+      this.addItem(this.state.input);
+    }
+  }
+
+  addItem = value => {
+    const { items, addItem, setClearInput, clearInput } = this.props;
+
+    if(items.indexOf(value) === -1 && value !== ''){
+      addItem(value);
+    }else if(clearInput){
+      setClearInput(false);
     }
   }
 
