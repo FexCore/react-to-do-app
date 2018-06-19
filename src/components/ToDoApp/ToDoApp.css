@@ -87,3 +87,22 @@ input[type="text"]{color: #333; width: 100%; box-sizing: border-box; letter-spac
 .input-field ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #5bb7d6; transition: 0.4s;}
 
 .input-field:focus ~ .focus-border{width: 100%; transition: 0.4s;}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size:18px;
+  padding: 10px;
+}
+
+header ul li a.active{
+  color: #ff0000;
+}

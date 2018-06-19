@@ -31,6 +31,7 @@ class Form extends Component {
 
     if(items.indexOf(value) === -1 && value !== ''){
       addItem(value);
+      this.props.history.push('/');
     }else if(clearInput){
       setClearInput(false);
     }
